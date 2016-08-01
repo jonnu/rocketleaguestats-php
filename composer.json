@@ -1,0 +1,33 @@
+{
+    "name": "jonnu/rocketleaguestats-php",
+    "type": "library",
+    "description": "PHP Client library for RocketLeagueStats",
+    "keywords": [
+        "client",
+        "rocketleague"
+    ],
+    "homepage": "https://github.com/jonnu/rocketleaguestats-php",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jonnu",
+            "email": "code@jonnu.eu",
+            "homepage": "https://github.com/jonnu"
+        }
+    ],
+    "require": {
+        "php": ">=5.6",
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.0"
+    },
+    "autoload": {
+        "files": [
+        ],
+        "psr-4": {
+            "Jonnu\\": "src/",
+            "GuzzleHttp\\": "vendor/"
+        }
+    }
+}
