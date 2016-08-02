@@ -5,7 +5,7 @@ namespace Jonnu\RocketLeagueStats\Enum;
 /**
  * RankedPlaylist
  */
-class RankedPlaylist
+abstract class RankedPlaylist
 {
     const DUEL          = 10;
     const DOUBLES       = 11;

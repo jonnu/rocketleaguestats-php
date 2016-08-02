@@ -5,7 +5,7 @@ namespace Jonnu\RocketLeagueStats\Enum;
 /**
  * Platform
  */
-class Platform
+abstract class Platform
 {
     const STEAM = 1;
     const PS4   = 2;

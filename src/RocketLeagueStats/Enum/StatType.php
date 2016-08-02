@@ -5,7 +5,7 @@ namespace Jonnu\RocketLeagueStats\Enum;
 /**
  * StatType
  */
-class StatType
+abstract class StatType
 {
     const WINS    = 'wins';
     const GOALS   = 'goals';
