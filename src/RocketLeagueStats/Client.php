@@ -131,7 +131,7 @@ class Client implements IClient
     {
         return $this->call('search/players', $callback, [
             'display_name' => $displayName,
-            'page'         => $page ?? 0,
+            'page'         => isset($page) ? $page : 0,
         ]);
     }
 
@@ -192,7 +192,7 @@ class Client implements IClient
         ];
 
         $doneCallable = function (ResponseInterface $Response) use ($callback) {
-            return $callback($Response->getStatusCode(), $Response->getBody()->getContents());
+            return $callback($Response->getStatusCode(), json_decode($Response->getBody()->getContents()));
         };
 
         $errorCallable = function (RequestException $Exception) {
